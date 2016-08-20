@@ -1,10 +1,7 @@
 #
 # Lists the heads of branches and last modification time and user
-# Stolen from someone's git alias file, unfortunately do not remember original source.
-# My work was limited to reformatting this to work as a zsh alias
 #
 # Authors:
-#   Unknown
 #   Anton Stroganov <stroganov.a@gmail.com>
 #
 
