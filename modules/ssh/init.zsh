@@ -39,6 +39,9 @@ fi
 # Load identities.
 if ssh-add -l 2>&1 | grep -q 'The agent has no identities'; then
   zstyle -a ':prezto:module:ssh:load' identities '_ssh_identities'
+  
+  memento ssh-add
+
   # ssh-add has strange requirements for running SSH_ASKPASS, so we duplicate
   # them here. Essentially, if the other requirements are met, we redirect stdin
   # from /dev/null in order to meet the final requirement.
